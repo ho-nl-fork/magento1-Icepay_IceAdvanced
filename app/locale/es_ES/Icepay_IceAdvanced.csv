@@ -1,6 +1,6 @@
 /*adminhtml*/
 Paymentmethods,"M&euml;todos de pago"
-Filter paymentmethods on customer billing country,"Filtre los m&euml;todos de pago  segï¿½n la direcci&ouml;n de pago del cliente"
+Filter paymentmethods on customer billing country,"Filtre los m&euml;todos de pago  según la direcci&ouml;n de pago del cliente"
 Configure ICEPAY paymentmethods [STORE VIEW],"Configure los m&euml;todos de pago ICEPAY. Esto lo puede hacer a trav&euml;s de Store View (vista de tienda)"
 SOAP webservices available,"SOAP webservices est&auml;n disponibles"
 SOAP was not found on this server,"No se encontr&ouml; SOAP en este servidor"
