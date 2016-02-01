@@ -160,6 +160,12 @@ class Icepay_IceCore_Model_Icepay_Postback {
     {
         $payment = $this->order->getPayment();
 
+        // Don't trigger a fatal error if we weren't able to find an associated order/payment
+        if (!$payment) {
+            $id = $_vars['PaymentID'];
+            Mage::helper("icecore")->log(sprintf("Unable to save transaction (id %s), order or payment does not exist", $id));
+            return $id;
+        }
         $transaction = $payment->getTransaction($_vars['PaymentID']);
 
         $i = 0;
