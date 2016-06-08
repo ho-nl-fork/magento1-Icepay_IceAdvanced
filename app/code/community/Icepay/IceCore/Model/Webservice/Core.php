@@ -36,7 +36,7 @@ class Icepay_IceCore_Model_Webservice_Core {
 
         $this->client = new SoapClient($this->serviceURL, array(
             'encoding' => 'UTF-8',
-            'cache_wsdl' => 'WSDL_CACHE_NONE'
+            'cache_wsdl' => WSDL_CACHE_NONE
         ));
     }
 
